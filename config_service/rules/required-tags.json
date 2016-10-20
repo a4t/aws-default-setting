@@ -1,0 +1,19 @@
+{
+  "ConfigRuleName": "required-tags",
+  "Description": "Checks whether your resources have the tags that you specify. For example, you can check whether your EC2 instances have the 'CostCenter' tag. Separate multiple values with commas.",
+  "Scope": {},
+  "Source": {
+    "Owner": "AWS",
+    "SourceIdentifier": "REQUIRED_TAGS"
+  },
+  "Scope": {
+    "ComplianceResourceTypes": [
+      "AWS::EC2::Instance",
+      "AWS::EC2::VPC",
+      "AWS::RDS::DBInstance",
+      "AWS::RDS::DBSnapshot",
+      "AWS::ElasticLoadBalancingV2::LoadBalancer"
+    ]
+  },
+  "InputParameters": "{\"tag1Key\":\"Service\",\"tag2Key\":\"Role\"}"
+}

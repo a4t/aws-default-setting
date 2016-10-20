@@ -1,0 +1,15 @@
+{
+  "ConfigRuleName": "eip-attached",
+  "Description": "Checks whether all EIP addresses allocated to a VPC are attached to EC2 instances or in-use ENIs.",
+  "Scope": {},
+  "Source": {
+    "Owner": "AWS",
+    "SourceIdentifier": "EIP_ATTACHED"
+  },
+  "Scope": {
+      "ComplianceResourceTypes": [
+          "AWS::EC2::EIP"
+      ]
+  },
+  "InputParameters": "{}"
+}

@@ -1,0 +1,10 @@
+{
+  "ConfigRuleName": "cloudtrail-enabled",
+  "Description": "Checks whether AWS CloudTrail is enabled in your AWS account. Optionally, you can specify which S3 bucket, SNS topic, and Amazon CloudWatch Logs ARN to use.",
+  "Scope": {},
+  "Source": {
+    "Owner": "AWS",
+    "SourceIdentifier": "CLOUD_TRAIL_ENABLED"
+  },
+  "InputParameters": "{}"
+}
